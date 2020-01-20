@@ -1,15 +1,15 @@
 # bigO
 
-![bigO](/assets/bigO.png)
+![bigO](/assets/bigO.PNG)
 
 Comparing element vs number of operations
-![bigO](/assets/linear_time.png)
+![bigO](/assets/linear_time.PNG)
 Above example is O(n) - aka Linear Time
 
-![bigO](/assets/constant_time.png)
+![bigO](/assets/constant_time.PNG)
 Above example is O(1) - aka Constant Time
 
-![bigO](/assets/O(3).png)
+![bigO](/assets/O(3).PNG)
 O(3) is still Constant time. It's still denotated as O(1) using bigO notation
 
 ## Big O Rules to Simplify calculation:
@@ -65,11 +65,11 @@ Interesting note:
 - Space Complexity
 - Time Complexity
 
-![bigO](/assets/operations.png)
+![bigO](/assets/operations.PNG)
 
 # Data Structures
 ## Array
-![bigO](/assets/array.png)
+![bigO](/assets/array.PNG)
 Organizes items sequentially in memory
 #### Static vs Dynamic Arrays
 - Static arrays are fixed in size. The size needs to be specified at the start. If the size needs to change later on, the data has to be reallocated to a new area in memory.
