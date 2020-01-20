@@ -104,7 +104,7 @@ A hash function generates an output of fixed length for any input that it gets. 
 Hash collisions occur when two different inputs generate the same hashed output, and get saved in the same memory address. The big downside of this is that it can cause lookup operations to be of time complexity O(n) instead of O(1). There are many different methods for dealing with hash collisions.
 
 #### Array Pros
-- Fast lookups
+- Fast lookups (but good collision resolution needed)
 - Fast inserts/deletes
 - Flexible keys
 
