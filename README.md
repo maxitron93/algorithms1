@@ -65,11 +65,11 @@ Interesting note:
 - Space Complexity
 - Time Complexity
 
-![bigO](/assets/operations.PNG)
+![operations](/assets/operations.PNG)
 
 # Data Structures
 ## Array
-![bigO](/assets/array.PNG)
+![arrays](/assets/array.PNG)
 Organizes items sequentially in memory
 #### Static vs Dynamic Arrays
 - Static arrays are fixed in size. The size needs to be specified at the start. If the size needs to change later on, the data has to be reallocated to a new area in memory.
@@ -78,7 +78,40 @@ Organizes items sequentially in memory
 <br>
 <strong>A lot of string questions can be thought of as array questions.</strong> For example, reversing a string can be thought of as reversing an array. 
 
+#### Array Pros
+- Fast lookups
+- Fast push/pop
+- It's ordered
+
+#### Array Cons
+- Slow inserts
+- Slow deletes
+- Fixed size (if using static array)
+
 ## Hash Table
+a.k.a. Objects (JavaScript), Dictionaries (Python), Maps (Java), Hashes (Ruby).
+
+A Hash Table is a collection of key-value pairs.
+
+Hash Tables are kind-of a black box in the way it stores the data. It's not ordered like an array. The Hash Table will decide where the data is stored in Memory.
+
+A hash function generates an output of fixed length for any input that it gets. For example, SHA-1, SHA-256, md5, etc. These hash functions create a memory address for any given input. This is why it's fast to retrieve data from a Hash Map.
+
+![arrays](/assets/hash.PNG)
+
+<strong>Hash collision a problem with using Hash Tables</strong>
+
+Hash collisions occur when two different inputs generate the same hashed output, and get saved in the same memory address. The big downside of this is that it can cause lookup operations to be of time complexity O(n) instead of O(1). There are many different methods for dealing with hash collisions.
+
+#### Array Pros
+- Fast lookups
+- Fast inserts/deletes
+- Flexible keys
+
+#### Array Cons
+- Unordered
+- Slow key itteration
+
 ## Linked List
 ## Stacks + Queues
 ## Trees
