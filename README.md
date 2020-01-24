@@ -141,6 +141,27 @@ Doubly linked lists have an extra pointer that also points to the previous node.
 - More memory
 
 ## Stacks + Queues
+
+Stacks and Queues are kind-of like arrays with less functionality. They're similar to arrays in that the elements within Stacks and Queues are ordered, but the limitation is that operations can be performed on only the first or last element - unlike array, where operations can be done to the middle of the array.
+
+This limited functionality can be useful in situations when we want to limit how the structure can be used.
+
+#### Stacks
+
+It's like a stack of plates - First in, last out (FILO). Only the top plate (the one that was added last) is accessible. 
+
+![Stack](assets/stack.PNG)
+
+Stacks can be built with arrays or linked lists. Using an array will technicly be faster because elements are next to eachother in memory, but using a linked list makes it easier to expand the stack as needed.
+
+#### Queues
+
+It's like a queue in real life - elements will be put in a line, and be accessible in the order they were added - First in, first out (FIFO)
+
+![Queue](assets/queue.PNG)
+
+Queues should never be built with an array because queues involve adding elements from to beginning. For arrays, this takes O(n) time. Instead they should be built using linked lists, which only takes O(1) time. 
+
 ## Trees
 ## Graphs
 
