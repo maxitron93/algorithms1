@@ -98,7 +98,7 @@ const firstRecurring = (arr) => {
 
 arr1 = [1,6,8,5,6,1,7,0] // should return 6
 arr2 = [1,6,8,5,7,1,7,0] // should return 1
-arr3 = [1,6,8,5,7,9,2,0] // should return undefined
+arr3 = [1,6,8,5,7,9,2,0] // should return undefined 
 
 console.log(firstRecurring(arr1))
 console.log(firstRecurring(arr2))

@@ -103,16 +103,43 @@ A hash function generates an output of fixed length for any input that it gets. 
 
 Hash collisions occur when two different inputs generate the same hashed output, and get saved in the same memory address. The big downside of this is that it can cause lookup operations to be of time complexity O(n) instead of O(1). There are many different methods for dealing with hash collisions.
 
-#### Array Pros
+#### Hash Table Pros
 - Fast lookups (but good collision resolution needed)
 - Fast inserts/deletes
 - Flexible keys
 
-#### Array Cons
+#### Hash Table Cons
 - Unordered
 - Slow key itteration
 
 ## Linked List
+
+![Linked lists](/assets/linked_lists.PNG)
+
+With static arrays, the problem was a fixed amount of memory. Memoery can increase by doubling up memory in a nother location, but that has perofmance issues (O(n)). 
+
+With has tables, it's hard to sort.
+
+Linked lists are a structure with trade-offs that can overcome these problems.
+
+Array items are located next to eachother in memory. This makes reading sequential items faster. Nodes of linked lists are not, so it can be slower to read sequential items, even if it's technically O(1).
+
+It's kind-of like a hash-table in that the items are scattered randomly in memory. But it has a benefit that the nodes are linked to eachother (which makes them sortable). 
+
+![Linked List Complexity](assets/linked_list_complexity.PNG)
+
+Doubly linked lists have an extra pointer that also points to the previous node. 
+
+#### Linked List Pros
+- Fast insertion
+- Fast deletion
+- Ordered
+- Flexible size
+
+#### Linked List Cons
+- Slow lookup
+- More memory
+
 ## Stacks + Queues
 ## Trees
 ## Graphs
@@ -122,3 +149,4 @@ Hash collisions occur when two different inputs generate the same hashed output,
 ## Sorting
 ## Searching
 ## Dynamic Programming
+
