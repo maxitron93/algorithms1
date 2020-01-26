@@ -162,6 +162,14 @@ It's like a queue in real life - elements will be put in a line, and be accessib
 
 Queues should never be built with an array because queues involve adding elements from to beginning. For arrays, this takes O(n) time. Instead they should be built using linked lists, which only takes O(1) time. 
 
+#### Stacks and Queues Pros
+- Fast operations (eventhough there are a limited number of operations)
+- Fast peek
+- Ordered
+
+#### Stacks and Queues Cons
+- Slow lookup
+
 ## Trees
 ## Graphs
 
