@@ -171,6 +171,48 @@ Queues should never be built with an array because queues involve adding element
 - Slow lookup
 
 ## Trees
+
+![Tree Data Structure](/assets/tree.PNG)
+
+Trees have a heirarchical structure.
+
+For example, the DOM is a tree structure (parent/child nodes).
+
+Previously, computer chess players used a tree structure for decision making (decision tree).
+
+There are lots of different trees (with different properties), but they all share similar characteristics.
+
+#### Binary Tree
+
+A binary tree is a tree with the following rules:
+- Each parent can only have zero, one, or two child nodes.
+- Each child can only have one parent.
+
+![Binary Tree](/assets/binary_tree.PNG)
+
+#### Binary Search Tree
+A subset of a binary tree:
+- Tree that are really good at for searching
+- This datastructure preserves relationships (unlike hash tables)
+
+Here are the rules:
+- All the child nodes to the right must be larger than the node
+- All the child nodes to the left must be smaller than the node
+
+These rules make it efficient to search for a value. It also makes it efficient to insert and delete an item (but less efficient than structures like hash tables that enable insert and delet in O(log(n)) time).
+
+Perfect binary search trees are the most efficient (each node as two child nodes, except the last set of nodes that have no children). Unbalanced trees just become a long linked list, so lose the benefits of efficient search, insert, and delete.
+
+Pros of Binary Search Trees:
+- Pretty much all operations are better than O(n)
+- Ordered
+- Flexible size
+
+Cons of Binary Search Trees:
+- No O(1) operations
+
+
+
 ## Graphs
 
 # Algorithms
