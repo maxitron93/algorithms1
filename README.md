@@ -211,7 +211,33 @@ Pros of Binary Search Trees:
 Cons of Binary Search Trees:
 - No O(1) operations
 
+#### AVL Trees + Red Black Trees
+We have seen that unbalanced trees do not enable efficient operations. Binary Search Tress have the potential to become very unbalanced. Therefore, in most cases, people imeplement AVL Trees or Red-Black Trees instead. These trees automatically rebalance, so mitigate the risk of having a very unbalanced (this inefficient) tree.
 
+#### Binary Heaps
+There are different types of heaps, but the binary heap is the most common type.
+
+A Max. Heap is one where the parent node has a greater value than the children nodes. A Min. Heap is the other way around.
+
+![Binary Heap](/assets/binary_heap.PNG)
+
+Lookups become less efficient (O(n)) becahse there is no longer any relationship between left and right nodes. That means we have to potentially look through every node to look for a particular value. 
+
+But this structure is useful for comparitive operations. e.g. Get all the values greater/less than 72.
+
+Inserting is done left-to-right, starting at the bottom, then bubbling up. i.e. It's different than how inserting is done in a binary tree, but the complexity is also O(log(n)).
+
+Note: Bonary Heaps are different from Memory Heaps.
+
+One use of a binary heap is to create a priority queue, where each element has a different value for priority (instead of a simple queue which is simple FIFO). 
+
+#### Tries
+
+Used for specialized searching (like for text). 
+
+![Trie Data Structure](/assets/trie.PNG)
+
+Can be useful for something like searching for words in a dictionary. The complexity for finding a word is O(word length). e.g. A-L-G-O-R-I-T-H-M
 
 ## Graphs
 
