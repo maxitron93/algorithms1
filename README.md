@@ -241,6 +241,45 @@ Can be useful for something like searching for words in a dictionary. The comple
 
 ## Graphs
 
+Graph at are great at representing relationships between elements. They can be used to represent roads, people, maps, etc.
+
+![Grapgh](/assets/graph.PNG)
+
+There are many types of graphs. Trees and Linked Lists are type of Graphs. But there are a number of important characteristics:
+
+#### Direction
+
+- Directed (One-way between two nodes)
+- Undirected (Two-way between two nodes)
+
+#### Weight
+
+- Weighted (values attached to edges)
+- Unweighted (all edges are equal)
+
+#### Cyclic
+
+- Cyclic (graphs where nodes are conencted in a way where relationships can go around 'in a circle')
+- Acyclic 
+
+![Cyclic vs Acyclic](/assets/cyclic_vs_acyclic.PNG)
+
+#### Ways to build graphs
+
+There are many ways to build graphs. They can be thought of as:
+
+- <strong>Edge list</strong>: A list of edges. e.g. [[0, 2], [2, 3], [1, 2]] has three nodes (0, 1, 2, 3) and 3 edges (each array)
+
+- <strong>Adjacent lists</strong>: [[2], [2], [3], [2]] Where each index is a node, and the array at each index indicates other nodes that it's adjacent to.
+
+- <strong>Adjacency Matrix</strong>: A matrix of connections between nodes (1 for connected, 0 for not connected) 
+
+#### Pros of graphs
+Complicated because there are so many different types of graphs. But generally, good at representing relationships.
+
+#### Cons of graphs
+Generally, scaling is hard.
+
 # Algorithms
 ## Recursion
 ## Sorting
