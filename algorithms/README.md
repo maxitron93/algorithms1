@@ -69,6 +69,37 @@ Large stack (inefficient)
 
 ## Sorting
 
+There are tons of different sorting algorithms. There's a whole wikipedia page on sorting algorithms. These sorting algorithms have different tradeoffs.
+
+![Sorting Algorithms](../assets/sorting_algorithms.PNG)
+
+It has been shown that comparison sorting algorithms cannot be more efficient that O(n long(n))
+
+#### Bubble Sort
+Simple, elementary sorting algorithm
+
+The largest number 'bubbles up' to the top. Every pair of numbers gets compared and the largest one gets pushed to the end, one pair at a time. Do this for multiple passes, each time getting the largest number and putting it at the end.
+
+It's one of the simplest sorting algorithms, but it't not efficient.
+
+#### Selection Sort
+Simple, elementary sorting algorithm
+
+Scans a list of items for the smallest element, and swaps that element with the element in the first position.
+
+#### Insertion Sort
+Simple, elementary sorting algorithm
+
+Scans the values one-by-one, remembers the values, and rearranges each value relative to the ones already scanned, based on its position.
+
+Especailly efficient when the list is short, or already nearly sorted.
+
+#### Merge Sort 
+More complex sort, usually more efficient than simple, elementary sorting algorithms
+
+#### Quick Sort
+More complex sort, usually more efficient than simple, elementary sorting algorithms
+
 
 
 ## Searching
@@ -76,5 +107,6 @@ Large stack (inefficient)
 
 
 ## Dynamic Programming
+
 
 
