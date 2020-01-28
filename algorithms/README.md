@@ -76,6 +76,7 @@ There are tons of different sorting algorithms. There's a whole wikipedia page o
 It has been shown that comparison sorting algorithms cannot be more efficient that O(n long(n))
 
 #### Bubble Sort
+
 Simple, elementary sorting algorithm
 
 The largest number 'bubbles up' to the top. Every pair of numbers gets compared and the largest one gets pushed to the end, one pair at a time. Do this for multiple passes, each time getting the largest number and putting it at the end.
@@ -83,11 +84,13 @@ The largest number 'bubbles up' to the top. Every pair of numbers gets compared 
 It's one of the simplest sorting algorithms, but it't not efficient.
 
 #### Selection Sort
+
 Simple, elementary sorting algorithm
 
 Scans a list of items for the smallest element, and swaps that element with the element in the first position.
 
 #### Insertion Sort
+
 Simple, elementary sorting algorithm
 
 Scans the values one-by-one, remembers the values, and rearranges each value relative to the ones already scanned, based on its position.
@@ -95,12 +98,59 @@ Scans the values one-by-one, remembers the values, and rearranges each value rel
 Especailly efficient when the list is short, or already nearly sorted.
 
 #### Merge Sort 
-More complex sort, usually more efficient than simple, elementary sorting algorithms
+
+More complex sort, but usually more efficient than simple, elementary sorting algorithms
+
+The three prior sorting algorithms use nested loops (O(n^2) complexity). 
+
+Merge sort uses divide and conquer, which results in O(n log(n)) complexity). Note: Divide and conquer can be implemented with recursion.
+
+It's complicated to implement with code - so probably never have to implement by hand.
+
 
 #### Quick Sort
-More complex sort, usually more efficient than simple, elementary sorting algorithms
 
+More complex sort, but usually more efficient than simple, elementary sorting algorithms.
 
+Just like merge sort, it's a divide-and-conquer algorithm (so can be implemented with recurrsion).
+
+Implementing quick sort is even more complicated than merge sort - something I can try some other time.
+
+Quick sort and mergesort are probably the two most used sorting algorithms.
+
+Quick sort is uaually faster on average, but has worse worst-case perfoamance.
+
+#### When to use which sort?
+
+Insertion sort - when the number of inputs is small, or it's already kind-of sorted, insertion sort is very fast.
+
+Bubble sort - never used because it's not efficeint. Just used for educational purposes.
+
+Selection sort - never used because it's not efficeint. Just used for educational purposes.
+
+Merge sort - really good because of divide and conquer. And since the worst case is O(n log n), we can guarantee performance. Downside is that it takes up more memory than quicksort.
+
+Quick sort - can be better than merge sort when space is a limitation, and when occassional worst case performance is okay. Typically more efficient than merge sort, but cannot guarantee performance since worse case is O(n^2).
+
+#### Other sorting algorithms
+
+Sorting algorithms can be divided into two categories 
+
+- <strong>Comparison sort</strong> (sorting by comparing elements)
+
+    Includes all of the sorting algorithms above. Matematically, cannot do better than O(n log(n)) complexity.
+
+- <strong>Non-comparison sort</strong>
+
+    e.g. Counting sort, Radix sort, Bucket sort, etc
+
+    Instead of sorting by comparison, these algorithms sort by taking advantage of how data is stored in the computer. These algorithms only work for integers in a restricted range. These algorithms have better time complexity than O(n log(n)).
+
+#### Sorting questions
+
+Probably won't be asked to implement a sorting algorithm from scratch. Questions are more likely to be:
+
+<strong>Given this problem, what sorting algorithm would you use?</strong>
 
 ## Searching
 

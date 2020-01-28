@@ -1,4 +1,4 @@
-arr = [100, 64, 7, 3, 8, 10, 61, 1, 45, 73, 99, 0, 5]
+arr = [100, 64, 7, 3, 8, 10, 61, 1, 45, 73, 99, 0, 5, 25]
 
 // Bubble sort - my implementation attempt
 const bubbleSort = (arr) => {
@@ -88,3 +88,47 @@ console.log(insertionSort(arr))
 
 // Insertion sort - answer given
 // Similar implemnetation
+
+
+// Merge sort - answer given
+// Uses a divide an conquer approach (which uses recursion)
+const mergeSort = (arr) => {
+    // Base case
+    if (arr.length === 1) {
+        return arr
+    }
+
+    // Split array into right and left
+    let length = arr.length
+    let halfWay = Math.floor(length / 2)
+    let left = arr.slice(0, halfWay)
+    let right = arr.splice(halfWay)
+
+    return merge(
+        mergeSort(left),
+        mergeSort(right)
+    )
+}
+
+function merge(left, right) {
+    let result = []
+    let leftIndex = 0
+    let rightIndex = 0
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (left[leftIndex] < right[rightIndex]) {
+            result.push(left[leftIndex])
+            leftIndex++
+        } else {
+            result.push(right[rightIndex])
+            rightIndex++
+        }
+    }
+
+    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
+}
+
+console.log(mergeSort(arr))
+
+// Quick sort - not attempted - maybe try later
+// Uses a divide an conquer approach (which uses recursion)
+
