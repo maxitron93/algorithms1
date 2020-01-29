@@ -220,6 +220,16 @@ There are different ways of doing Depth First Search. Google for more info.
 
 A common question is how to validate a binary search tree (hint: BFS is good for this).
 
+What searching algorithm to use for finding the shortest path between nodes in a graph?
+
+#### Bellman-Ford and Dijkstra Algorithms
+
+These algorithms are used to find the shortest path in a weighted graph. DFS and BFS can't be used in a weighted graph because those algorithms 
+
+The Ballman-Ford algorithm can handle negative weights, whereas the Dijkstra algorithm can't.
+
+But the Dijkstra algorithm is more efficient than the Bellman-Ford algorithm.
+
 ## Dynamic Programming
 
 
