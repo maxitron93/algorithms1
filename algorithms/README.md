@@ -154,7 +154,71 @@ Probably won't be asked to implement a sorting algorithm from scratch. Questions
 
 ## Searching
 
+#### Linear Search
 
+aka sequential search.
+
+Method of finding a target value in a list. Looks for a value sequentially in a list until the value is found.
+
+It's O(n) complexity, so not so fast when working with lots of data. 
+
+#### Binary Search
+
+If the list is <strong>sorted</strong>, we can perform Binary Search. 
+
+It's O(log(n)) complexity, because it's esentially searching as if the list was a binary search tree.
+
+![Binary Search](../assets/binary_search.PNG)
+
+#### Tree Traversals
+
+In some cases, it's necessary to go to every node in a tree or graph. This is called traversing.
+
+Because this involves visiting every node, this is O(n) time complexity.
+
+Breadth First Search and Deptyh First Search are variants of traversing algorithms.
+
+#### Breadth First Search (BFS)
+
+Start at the root node, and go down <strong>one level at a time</strong>, searching left to right.
+
+This takes up more memory because it requires us to track the child nodes of every node at a given level, while searching that level.
+
+![Breadth First Search](../assets/bfs.PNG)
+
+#### Depth First Search/Traversal
+
+Start at the root node, and go down <strong>one branch at a time<strong>, until the target is found or the end is reached. 
+
+If the end is reached before the target is found, go back to the ancestors, and explore a different branch. 
+
+Has lower memory requirements than BFS because it's not necessary to store all the child pointers at each level.
+
+![Depth First Search](../assets/dfs.PNG)
+
+Like going through a maze. Keep following a path until a dead-end, then going back and trying a different path.
+
+#### BFS vs DFS
+
+- The time complexity are the same (O(n)) because both algorithms involve visiting each node once.
+
+- BFS is good at finiding the shortest path between nodes because the algorithm involves checking the closest nodes first.
+
+- DFS is good at figurout out if a path exists between two nodes.
+
+- DFS uses less memory than BFS, but it can get slow if the tree/graph is very deep.
+
+- BFS is good when you have prior information that the target is likely to be at the <strong>top</strong> of the tree. 
+
+- DFS good when you have prior information that the target is likely to be at the <strong>bottom</strong> of the tree.
+
+#### PreOrderm, InOrder, and PostOrder
+
+There are different ways of doing Depth First Search. Google for more info.
+
+#### Common question
+
+A common question is how to validate a binary search tree (hint: BFS is good for this).
 
 ## Dynamic Programming
 
