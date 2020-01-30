@@ -71,6 +71,10 @@ Doubly linked lists have an extra pointer that also points to the previous node.
 - Slow lookup
 - More memory
 
+#### Linked List Questions
+
+A common question is to <strong>Reverse a linked list</strong>
+
 ## Stacks + Queues
 
 Stacks and Queues are kind-of like arrays with less functionality. They're similar to arrays in that the elements within Stacks and Queues are ordered, but the limitation is that operations can be performed on only the first or last element - unlike array, where operations can be done to the middle of the array.
