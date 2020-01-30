@@ -188,7 +188,7 @@ This takes up more memory because it requires us to track the child nodes of eve
 
 #### Depth First Search/Traversal
 
-Start at the root node, and go down <strong>one branch at a time<strong>, until the target is found or the end is reached. 
+Start at the root node, and go down <strong>one branch at a time</strong>, until the target is found or the end is reached. 
 
 If the end is reached before the target is found, go back to the ancestors, and explore a different branch. 
 
@@ -232,5 +232,24 @@ But the Dijkstra algorithm is more efficient than the Bellman-Ford algorithm.
 
 ## Dynamic Programming
 
+Dynamic Programming is an optimization technique using cahcing. If you have something you can cache, you can use dynamic programming.
 
+i.e. If the same sub-problem keeps occuring, cache the results of that sub-problem and use the results when they come up in the future.
 
+#### Caching
+
+Caching is storing a value so it can be used in the future.
+Memoization is just a funny name for caching.
+
+A good example is using dynamic programming to make the recursive fibonacci function more efficient.
+
+![Recursive fibonacci tree](../assets/fib_dynamic_programming.PNG)
+
+As we can see, fib(1), fib(2), fib(3), etc get calculated again and again. By caching these result, we can avoid doing multiple calculations.
+
+Implementing the recursive fibonacci function with dyanmic program shortens the time complexity to O(n)!
+
+#### Common Dynamic Programming Questions
+- House Robber
+- Best Time to Buy and Sell Stock
+- Climbing Stairs
